@@ -89,8 +89,6 @@ const QuizGame = ({ countries, questionType }: QuizGameProps) => {
   const [totalQuizTime, setTotalQuizTime] = useState(0); // Total time in seconds
   const stopwatchRef = useRef<NodeJS.Timeout | null>(null);
   const [selectedCountryId, setSelectedCountryId] = useState<string | null>(null);
-  const [debugMode, setDebugMode] = useState(false);
-  const [mapTestMode, setMapTestMode] = useState(false);
   
   // Generate questions on initial load
   useEffect(() => {
@@ -376,35 +374,7 @@ const QuizGame = ({ countries, questionType }: QuizGameProps) => {
       
       {questionType === 'locations' ? (
         <Box>
-          {/* Debug controls for development */}
-          {import.meta.env.DEV && (
-            <Box sx={{ mb: 2, display: 'flex', justifyContent: 'center', gap: 2 }}>
-              <FormControlLabel
-                control={
-                  <Switch 
-                    checked={debugMode}
-                    onChange={(e) => setDebugMode(e.target.checked)}
-                    size="small"
-                  />
-                }
-                label="Debug Mode"
-              />
-              <FormControlLabel
-                control={
-                  <Switch 
-                    checked={mapTestMode}
-                    onChange={(e) => setMapTestMode(e.target.checked)}
-                    size="small"
-                  />
-                }
-                label="Test Map"
-              />
-            </Box>
-          )}
-
-          {mapTestMode ? (
-            <TestMap />
-          ) : currentCountry ? (
+          {currentCountry ? (
             <MapQuizQuestion
               country={currentCountry}
               onAnswer={(isCorrect, countryId) => handleMapAnswer(isCorrect, countryId)}
@@ -415,22 +385,6 @@ const QuizGame = ({ countries, questionType }: QuizGameProps) => {
             <Alert severity="error" sx={{ mt: 2 }}>
               Error: Could not load country data
             </Alert>
-          )}
-
-          {debugMode && (
-            <Box sx={{ mt: 3, p: 2, border: '1px dashed #ccc' }}>
-              <Typography variant="subtitle2" gutterBottom>Debug Information</Typography>
-              <pre style={{ fontSize: '12px', overflow: 'auto', maxHeight: '200px' }}>
-                {JSON.stringify({
-                  questionType,
-                  currentQuestion,
-                  currentCountryId: currentCountry?.id,
-                  selectedCountryId,
-                  showAnswer,
-                  score
-                }, null, 2)}
-              </pre>
-            </Box>
           )}
         </Box>
       ) : (
