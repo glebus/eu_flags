@@ -12,9 +12,7 @@ import {
   CardContent, 
   Avatar, 
   styled,
-  Alert,
-  Switch,
-  FormControlLabel
+  Alert
 } from '@mui/material';
 import { green, red } from '@mui/material/colors';
 import MapQuizQuestion from './MapQuizQuestion';
