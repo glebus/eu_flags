@@ -22,9 +22,8 @@ import {
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 
-// Use an online GeoJSON source for Europe with a backup source
-const EUROPE_GEO_URL = "https://raw.githubusercontent.com/deldersveld/topojson/master/continents/europe.json";
-const BACKUP_GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
+// Use a reliable GeoJSON source for Europe
+const EUROPE_GEO_URL = "https://raw.githubusercontent.com/leakyMirror/map-of-europe/refs/heads/master/TopoJSON/europe.topojson";
 
 interface MapQuizQuestionProps {
   country: Country;
@@ -69,22 +68,17 @@ const MapQuizQuestion: React.FC<MapQuizQuestionProps> = ({
   const [position, setPosition] = useState({ coordinates: [10, 50], zoom: 2 });
   const [mapLoading, setMapLoading] = useState(true);
   const [mapError, setMapError] = useState<string | null>(null);
-  const [useBackupSource, setUseBackupSource] = useState(false);
   
   // Ensure we have a reasonable timeout for loading the map
   useEffect(() => {
     const timer = setTimeout(() => {
       if (mapLoading) {
-        if (!useBackupSource) {
-          setUseBackupSource(true);
-        } else {
-          setMapError("Map is taking too long to load. Please try refreshing the page.");
-        }
+        setMapError("Map is taking too long to load. Please try refreshing the page.");
       }
-    }, 8000);
+    }, 10000);
     
     return () => clearTimeout(timer);
-  }, [mapLoading, useBackupSource]);
+  }, [mapLoading]);
 
   const handleZoomIn = () => {
     if (position.zoom >= 8) return;
@@ -108,8 +102,8 @@ const MapQuizQuestion: React.FC<MapQuizQuestionProps> = ({
     if (showAnswer) return;
     
     try {
-      // Extract country information
-      const countryName = geo.properties.name || geo.properties.NAME || '';
+      // Extract country information from the topojson properties
+      const countryName = geo.properties.NAME || geo.properties.name || '';
       // Convert country name to ID
       const normalizedCountryId = countryName?.toLowerCase().replace(/\s+/g, '_') || '';
       
@@ -122,7 +116,7 @@ const MapQuizQuestion: React.FC<MapQuizQuestionProps> = ({
 
   const getCountryFillColor = (geo: any) => {
     try {
-      const countryName = geo.properties.name || geo.properties.NAME || '';
+      const countryName = geo.properties.NAME || geo.properties.name || '';
       const normalizedCountryId = countryName?.toLowerCase().replace(/\s+/g, '_') || '';
       
       if (showAnswer) {
@@ -237,7 +231,7 @@ const MapQuizQuestion: React.FC<MapQuizQuestionProps> = ({
             center={position.coordinates as [number, number]}
             onMoveEnd={handleMoveEnd}
           >
-            <Geographies geography={useBackupSource ? BACKUP_GEO_URL : EUROPE_GEO_URL}>
+            <Geographies geography={EUROPE_GEO_URL}>
               {({ geographies }) => {
                 // Once geographies are loaded, set loading to false
                 if (geographies.length > 0 && mapLoading) {
