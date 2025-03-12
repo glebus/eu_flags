@@ -219,7 +219,7 @@ const MapQuizQuestion: React.FC<MapQuizQuestionProps> = ({
           projectionConfig={{
             rotate: [-10.0, -52.0, 0],
             center: [-5, 5],
-            scale: 1100
+            scale: 700
           }}
           style={{
             width: "100%",

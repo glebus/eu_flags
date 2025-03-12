@@ -18,7 +18,6 @@ import {
 } from '@mui/material';
 import { green, red } from '@mui/material/colors';
 import MapQuizQuestion from './MapQuizQuestion';
-import TestMap from './TestMap';
 
 interface QuizGameProps {
   countries: Country[];
