@@ -62,7 +62,8 @@
     "interestingFacts": "Interesting Facts",
     "location": "Location",
     "coordinates": "Coordinates",
-    "neighboringCountries": "Neighboring Countries"
+    "neighboringCountries": "Neighboring Countries",
+    "about": "About"
   },
   "map": {
     "title": "Interactive European Map",

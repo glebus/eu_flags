@@ -62,7 +62,8 @@
     "interestingFacts": "Ciekawe fakty",
     "location": "Lokalizacja",
     "coordinates": "Współrzędne",
-    "neighboringCountries": "Kraje sąsiadujące"
+    "neighboringCountries": "Kraje sąsiadujące",
+    "about": "O kraju"
   },
   "map": {
     "title": "Interaktywna mapa Europy",
