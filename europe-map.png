@@ -1,0 +1,10 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" fill="#f5f5f5"/>
+  <path d="M300,100 Q450,150 500,300 Q600,400 600,500 Q550,600 450,650 Q350,700 250,650 Q150,600 100,500 Q50,400 100,300 Q150,200 300,100 Z" fill="#f0f0f0" stroke="#cccccc" stroke-width="2"/>
+  <text x="400" y="400" font-family="sans-serif" font-size="20" text-anchor="middle" fill="#999">
+    Europe Map Placeholder
+  </text>
+  <text x="400" y="430" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#999">
+    (Replace with actual Europe map image)
+  </text>
+</svg> 
