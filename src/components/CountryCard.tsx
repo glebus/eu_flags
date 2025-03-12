@@ -8,8 +8,7 @@ import {
   CardContent, 
   CardActions, 
   Typography, 
-  Button, 
-  Box,
+  Button,
   styled
 } from '@mui/material';
 

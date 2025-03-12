@@ -11,8 +11,7 @@ import {
   Card, 
   CardContent, 
   Avatar, 
-  styled,
-  Container
+  styled
 } from '@mui/material';
 import { green, red } from '@mui/material/colors';
 
@@ -63,9 +62,9 @@ const OptionButton = styled(Button, {
   border: '2px solid',
   width: '100%',
   borderColor: correct ? green[500] : incorrect ? red[500] : selected ? theme.palette.primary.main : theme.palette.divider,
-  backgroundColor: correct ? green[50] : incorrect ? red[50] : selected ? theme.palette.primary[50] : 'white',
+  backgroundColor: correct ? green[100] : incorrect ? red[100] : selected ? theme.palette.primary.light : 'white',
   '&:hover': {
-    backgroundColor: correct ? green[50] : incorrect ? red[50] : theme.palette.primary[50],
+    backgroundColor: correct ? green[100] : incorrect ? red[100] : theme.palette.primary.light,
     borderColor: correct ? green[500] : incorrect ? red[500] : theme.palette.primary.main
   },
   '&.Mui-disabled': {

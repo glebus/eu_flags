@@ -22,8 +22,6 @@ import { useState } from 'react';
 
 // Custom NavLink that works with MUI Button
 const NavLinkButton = ({ to, children, ...props }: { to: string; children: React.ReactNode; [key: string]: any }) => {
-  const theme = useTheme();
-
   return (
     <Button
       component={NavLink}

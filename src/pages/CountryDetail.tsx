@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useParams, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 import europeanCountries, { Country } from '../data/europeanCountries';
-import InteractiveMap from '../components/InteractiveMap';
 
 const PageContainer = styled.div`
   padding: 2rem 0;
@@ -114,7 +113,7 @@ const FactItem = styled.li`
 
 const NeighborGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   gap: 1rem;
 `;
 
@@ -123,14 +122,15 @@ const NeighborCard = styled(Link)`
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+  background-color: white;
   border-radius: var(--border-radius);
-  background-color: #f5f5f5;
-  transition: all 0.3s ease;
+  box-shadow: var(--box-shadow);
+  text-decoration: none;
+  color: var(--text-color);
+  transition: transform 0.3s ease;
   
   &:hover {
     transform: translateY(-5px);
-    box-shadow: var(--box-shadow);
-    background-color: white;
   }
 `;
 
@@ -140,7 +140,7 @@ const NeighborFlag = styled.div`
 `;
 
 const NeighborName = styled.div`
-  font-weight: 500;
+  font-size: 0.9rem;
   text-align: center;
 `;
 
@@ -152,19 +152,13 @@ const ErrorMessage = styled.div`
   box-shadow: var(--box-shadow);
 `;
 
-const MapContainer = styled.div`
-  height: 300px;
-  margin-bottom: 2rem;
-`;
-
-const CountryDetail: React.FC = () => {
+const CountryDetail = () => {
   const { t } = useTranslation();
-  const { countryId } = useParams<{ countryId: string }>();
+  const { id } = useParams<{ id: string }>();
   const [country, setCountry] = useState<Country | null>(null);
   const [neighbors, setNeighbors] = useState<Country[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const navigate = useNavigate();
   
   // Function to create a capital ID for translation
   const getCapitalId = (capital: string): string => {
@@ -172,14 +166,14 @@ const CountryDetail: React.FC = () => {
   };
   
   useEffect(() => {
-    if (!countryId) {
+    if (!id) {
       setError('No country specified');
       setLoading(false);
       return;
     }
     
     // Find the country by ID
-    const foundCountry = europeanCountries.find(c => c.id === countryId);
+    const foundCountry = europeanCountries.find(c => c.id === id);
     
     if (!foundCountry) {
       setError('Country not found');
@@ -196,7 +190,7 @@ const CountryDetail: React.FC = () => {
     
     setNeighbors(neighborCountries);
     setLoading(false);
-  }, [countryId]);
+  }, [id]);
   
   if (loading) {
     return <PageContainer>{t('common.loading')}</PageContainer>;

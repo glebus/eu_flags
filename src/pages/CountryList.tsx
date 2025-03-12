@@ -13,11 +13,8 @@ import {
   Select,
   MenuItem,
   TextField,
-  Card,
-  Stack,
   styled
 } from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search';
 
 const NoResultsIcon = styled(Box)(({ theme }) => ({
   fontSize: '3rem',
@@ -27,7 +24,7 @@ const NoResultsIcon = styled(Box)(({ theme }) => ({
 
 const CountryList = () => {
   const { t, i18n } = useTranslation();
-  const [countries, setCountries] = useState<Country[]>(europeanCountries);
+  const [countries] = useState<Country[]>(europeanCountries);
   const [filteredCountries, setFilteredCountries] = useState<Country[]>(europeanCountries);
   const [searchTerm, setSearchTerm] = useState('');
   const [regionFilter, setRegionFilter] = useState<string>('');
