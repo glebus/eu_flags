@@ -1,0 +1,241 @@
+{
+  "common": {
+    "loading": "Ładowanie...",
+    "error": "Wystąpił błąd",
+    "noResults": "Nie znaleziono wyników",
+    "back": "Powrót",
+    "close": "Zamknij",
+    "learnMore": "Dowiedz się więcej",
+    "viewDetails": "Zobacz szczegóły",
+    "startQuiz": "Rozpocznij quiz",
+    "next": "Dalej",
+    "restart": "Rozpocznij ponownie",
+    "note": "Uwaga",
+    "tip": "Wskazówka"
+  },
+  "header": {
+    "home": "Strona główna",
+    "countries": "Kraje",
+    "quiz": "Quiz",
+    "map": "Mapa"
+  },
+  "footer": {
+    "copyright": "© {{year}} Platforma edukacyjna krajów europejskich",
+    "description": "Dowiedz się wszystkiego o krajach europejskich, stolicach i geografii"
+  },
+  "home": {
+    "title": "Poznaj kraje europejskie",
+    "subtitle": "Odkryj kraje Europy, ich stolice, flagi i położenie geograficzne za pomocą interaktywnych narzędzi edukacyjnych i quizów.",
+    "browseCountries": "Przeglądaj kraje",
+    "takeQuiz": "Rozwiąż quiz",
+    "featuresTitle": "Funkcje",
+    "features": {
+      "map": {
+        "title": "Interaktywna mapa",
+        "description": "Odkrywaj kraje Europy na interaktywnej mapie. Kliknij dowolny kraj, aby dowiedzieć się więcej."
+      },
+      "info": {
+        "title": "Kompleksowe informacje",
+        "description": "Uzyskaj dostęp do szczegółowych informacji o każdym kraju europejskim, w tym o jego stolicy, regionie, sąsiadach i ciekawych faktach."
+      },
+      "quiz": {
+        "title": "Quizy wiedzy",
+        "description": "Sprawdź swoją wiedzę w interaktywnych quizach o krajach europejskich, ich stolicach, flagach i położeniu geograficznym."
+      }
+    },
+    "ctaTitle": "Gotowy, by sprawdzić swoją wiedzę?",
+    "ctaButton": "Rozpocznij quiz teraz"
+  },
+  "countries": {
+    "title": "Kraje europejskie",
+    "searchPlaceholder": "np. Francja, Berlin...",
+    "searchLabel": "Szukaj krajów lub stolic",
+    "regionFilterLabel": "Filtruj według regionu",
+    "allRegions": "Wszystkie regiony",
+    "capital": "Stolica",
+    "region": "Region",
+    "noCountriesFound": "Nie znaleziono krajów",
+    "tryAdjusting": "Spróbuj dostosować kryteria wyszukiwania lub filtry"
+  },
+  "country": {
+    "basicInfo": "Podstawowe informacje",
+    "interestingFacts": "Ciekawe fakty",
+    "location": "Lokalizacja",
+    "coordinates": "Współrzędne",
+    "neighboringCountries": "Kraje sąsiadujące"
+  },
+  "map": {
+    "title": "Interaktywna mapa Europy",
+    "subtitle": "Odkrywaj kraje Europy na interaktywnej mapie. Kliknij dowolny kraj, aby zobaczyć więcej informacji lub użyj kontrolek powiększania do nawigacji.",
+    "legendTitle": "Legenda mapy",
+    "capitalCities": "Stolice",
+    "tip": "Możesz powiększać/pomniejszać za pomocą kontrolek lub kółka myszy oraz przesuwać mapę przeciągając ją."
+  },
+  "quiz": {
+    "title": "Quiz o krajach europejskich",
+    "types": {
+      "capitals": {
+        "name": "Stolice",
+        "description": "Sprawdź swoją wiedzę o stolicach krajów europejskich."
+      },
+      "flags": {
+        "name": "Flagi",
+        "description": "Rozpoznaj kraje europejskie po ich flagach."
+      },
+      "regions": {
+        "name": "Regiony",
+        "description": "Dopasuj kraje europejskie do ich regionów geograficznych."
+      },
+      "facts": {
+        "name": "Fakty",
+        "description": "Sprawdź swoją wiedzę o ciekawych faktach dotyczących krajów europejskich."
+      }
+    },
+    "questions": "Quiz zawiera 10 pytań. Powodzenia!",
+    "score": "Wynik",
+    "nextQuestion": "Następne pytanie",
+    "seeResults": "Zobacz wyniki",
+    "quizComplete": "Quiz ukończony!",
+    "feedbackExcellent": "Doskonale! Jesteś ekspertem w geografii Europy!",
+    "feedbackGreat": "Świetna robota! Dobrze znasz Europę!",
+    "feedbackGood": "Dobry wysiłek! Masz solidne zrozumienie geografii Europy.",
+    "feedbackNeedsWork": "Kontynuuj naukę! Europa ma wiele ciekawych krajów do odkrycia.",
+    "takeAnotherQuiz": "Rozwiąż kolejny quiz",
+    "capitalQuestion": "Jaką stolicę ma {{country}}?",
+    "flagQuestion": "Do jakiego kraju należy ta flaga {{flag}}?",
+    "elapsedTime": "Całkowity czas",
+    "totalTime": "Całkowity czas quizu",
+    "averageTimePerQuestion": "Średni czas na pytanie",
+    "stopwatchInfo": "Rozwiązuj quiz w swoim tempie. Stoper będzie mierzyć Twój całkowity czas, a wyniki końcowe pokażą, ile czasu zajęło Ci ukończenie quizu."
+  },
+  "regions": {
+    "northernEurope": "Europa Północna",
+    "southernEurope": "Europa Południowa",
+    "westernEurope": "Europa Zachodnia",
+    "easternEurope": "Europa Wschodnia",
+    "centralEurope": "Europa Środkowa"
+  },
+  "countryNames": {
+    "albania": "Albania",
+    "andorra": "Andora",
+    "austria": "Austria",
+    "belarus": "Białoruś",
+    "belgium": "Belgia",
+    "bosnia_herzegovina": "Bośnia i Hercegowina",
+    "bulgaria": "Bułgaria",
+    "croatia": "Chorwacja",
+    "cyprus": "Cypr",
+    "czech_republic": "Czechy",
+    "denmark": "Dania",
+    "estonia": "Estonia",
+    "finland": "Finlandia",
+    "france": "Francja",
+    "germany": "Niemcy",
+    "greece": "Grecja",
+    "hungary": "Węgry",
+    "iceland": "Islandia",
+    "ireland": "Irlandia",
+    "italy": "Włochy",
+    "kosovo": "Kosowo",
+    "latvia": "Łotwa",
+    "liechtenstein": "Liechtenstein",
+    "lithuania": "Litwa",
+    "luxembourg": "Luksemburg",
+    "malta": "Malta",
+    "moldova": "Mołdawia",
+    "monaco": "Monako",
+    "montenegro": "Czarnogóra",
+    "netherlands": "Holandia",
+    "north_macedonia": "Macedonia Północna",
+    "norway": "Norwegia",
+    "poland": "Polska",
+    "portugal": "Portugalia",
+    "romania": "Rumunia",
+    "russia": "Rosja",
+    "san_marino": "San Marino",
+    "serbia": "Serbia",
+    "slovakia": "Słowacja",
+    "slovenia": "Słowenia",
+    "spain": "Hiszpania",
+    "sweden": "Szwecja",
+    "switzerland": "Szwajcaria",
+    "ukraine": "Ukraina",
+    "united_kingdom": "Wielka Brytania",
+    "vatican_city": "Watykan"
+  },
+  "capitalNames": {
+    "tirana": "Tirana",
+    "andorra_la_vella": "Andora",
+    "vienna": "Wiedeń",
+    "minsk": "Mińsk",
+    "brussels": "Bruksela",
+    "sarajevo": "Sarajewo",
+    "sofia": "Sofia",
+    "zagreb": "Zagrzeb",
+    "nicosia": "Nikozja",
+    "prague": "Praga",
+    "copenhagen": "Kopenhaga",
+    "tallinn": "Tallinn",
+    "helsinki": "Helsinki",
+    "paris": "Paryż",
+    "berlin": "Berlin",
+    "athens": "Ateny",
+    "budapest": "Budapeszt",
+    "reykjavik": "Reykjavik",
+    "dublin": "Dublin",
+    "rome": "Rzym",
+    "pristina": "Prisztina",
+    "riga": "Ryga",
+    "vaduz": "Vaduz",
+    "vilnius": "Wilno",
+    "luxembourg_city": "Luksemburg",
+    "valletta": "Valletta",
+    "chisinau": "Kiszyniów",
+    "monaco": "Monako",
+    "podgorica": "Podgorica",
+    "amsterdam": "Amsterdam",
+    "skopje": "Skopje",
+    "oslo": "Oslo",
+    "warsaw": "Warszawa",
+    "lisbon": "Lizbona",
+    "bucharest": "Bukareszt",
+    "moscow": "Moskwa",
+    "san_marino": "San Marino",
+    "belgrade": "Belgrad",
+    "bratislava": "Bratysława",
+    "ljubljana": "Lublana",
+    "madrid": "Madryt",
+    "stockholm": "Sztokholm",
+    "bern": "Berno",
+    "kyiv": "Kijów",
+    "london": "Londyn",
+    "vatican_city": "Watykan"
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Strona nie znaleziona",
+    "message": "Strona, której szukasz, mogła zostać usunięta, zmieniono jej nazwę lub jest tymczasowo niedostępna.",
+    "returnHome": "Wróć na stronę główną"
+  },
+  "languageSwitcher": {
+    "language": "Język",
+    "en": "English",
+    "pl": "Polski"
+  },
+  "albania_description": "Albania jest krajem w Europie Południowo-Wschodniej nad Morzem Adriatyckim i Jońskim. Graniczy z Czarnogórą, Kosowem, Macedonią Północną i Grecją.",
+  "albania_fact1": "W Albanii znajduje się ponad 750 000 bunkrów rozsianych po całym kraju.",
+  "albania_fact2": "Większość Albańczyków to muzułmanie, co czyni ją jednym z niewielu krajów europejskich z większością muzułmańską.",
+  "albania_fact3": "Język albański, znany jako Shqip, jest jednym z najstarszych języków w Europie.",
+  "andorra_description": "Andora to małe, śródlądowe państwo położone między Francją a Hiszpanią w górach Pirenejów.",
+  "andorra_fact1": "Andora nie ma lotniska ani stacji kolejowych, co sprawia, że jest dostępna tylko drogą lądową.",
+  "andorra_fact2": "Jest to jedyny kraj na świecie, w którym język kataloński jest językiem urzędowym.",
+  "andorra_fact3": "Andora ma najwyższą średnią długość życia na świecie - około 83 lat.",
+  "austria_description": "Austria jest śródlądowym krajem w Europie Środkowej o wysokim standardzie życia. Graniczy z Niemcami, Czechami, Słowacją, Węgrami, Słowenią, Włochami, Szwajcarią i Liechtensteinem.",
+  "austria_fact1": "Wiedeń, stolica Austrii, był wielokrotnie uznawany za miasto o najwyższym standardzie życia na świecie.",
+  "austria_fact2": "Flaga austriacka jest jedną z najstarszych flag narodowych na świecie.",
+  "austria_fact3": "Słynny kompozytor Wolfgang Amadeus Mozart urodził się w Salzburgu w Austrii.",
+  "poland_description": "Polska to kraj w Europie Środkowej graniczący z Niemcami, Czechami, Słowacją, Ukrainą, Białorusią, Rosją, Litwą i Morzem Bałtyckim.",
+  "poland_fact1": "Polska jest 9. największym krajem w Europie.",
+  "poland_fact2": "Maria Skłodowska-Curie, pierwsza kobieta, która otrzymała Nagrodę Nobla, urodziła się w Polsce.",
+  "poland_fact3": "Polska ma 16 obiektów wpisanych na Listę Światowego Dziedzictwa UNESCO."
+} 

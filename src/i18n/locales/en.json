@@ -1,0 +1,241 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "noResults": "No results found",
+    "back": "Back",
+    "close": "Close",
+    "learnMore": "Learn More",
+    "viewDetails": "View Details",
+    "startQuiz": "Start Quiz",
+    "next": "Next",
+    "restart": "Restart",
+    "note": "Note",
+    "tip": "Tip"
+  },
+  "header": {
+    "home": "Home",
+    "countries": "Countries",
+    "quiz": "Quiz",
+    "map": "Map"
+  },
+  "footer": {
+    "copyright": "© {{year}} European Countries Learning Platform",
+    "description": "Learn all about European countries, capitals, and geography"
+  },
+  "home": {
+    "title": "Learn European Countries",
+    "subtitle": "Discover the countries of Europe, their capitals, flags, and geographical locations through interactive learning tools and quizzes.",
+    "browseCountries": "Browse Countries",
+    "takeQuiz": "Take a Quiz",
+    "featuresTitle": "Features",
+    "features": {
+      "map": {
+        "title": "Interactive Map",
+        "description": "Explore the countries of Europe on an interactive map. Click on any country to learn more about it."
+      },
+      "info": {
+        "title": "Comprehensive Information",
+        "description": "Access detailed information about each European country, including its capital, region, neighbors, and interesting facts."
+      },
+      "quiz": {
+        "title": "Knowledge Quizzes",
+        "description": "Test your knowledge with interactive quizzes on European countries, their capitals, flags, and geographic locations."
+      }
+    },
+    "ctaTitle": "Ready to test your knowledge?",
+    "ctaButton": "Start Quiz Now"
+  },
+  "countries": {
+    "title": "European Countries",
+    "searchPlaceholder": "e.g. France, Berlin...",
+    "searchLabel": "Search Countries or Capitals",
+    "regionFilterLabel": "Filter by Region",
+    "allRegions": "All Regions",
+    "capital": "Capital",
+    "region": "Region",
+    "noCountriesFound": "No countries found",
+    "tryAdjusting": "Try adjusting your search criteria or filters"
+  },
+  "country": {
+    "basicInfo": "Basic Information",
+    "interestingFacts": "Interesting Facts",
+    "location": "Location",
+    "coordinates": "Coordinates",
+    "neighboringCountries": "Neighboring Countries"
+  },
+  "map": {
+    "title": "Interactive European Map",
+    "subtitle": "Explore the countries of Europe on the interactive map. Click on any country to view more information, or use the zoom controls to navigate.",
+    "legendTitle": "Map Legend",
+    "capitalCities": "Capital cities",
+    "tip": "You can zoom in/out using the controls or your mouse wheel, and pan the map by dragging it."
+  },
+  "quiz": {
+    "title": "European Countries Quiz",
+    "types": {
+      "capitals": {
+        "name": "Capitals",
+        "description": "Test your knowledge of the capital cities of European countries."
+      },
+      "flags": {
+        "name": "Flags",
+        "description": "Identify European countries by their flags."
+      },
+      "regions": {
+        "name": "Regions",
+        "description": "Match European countries to their geographic regions."
+      },
+      "facts": {
+        "name": "Facts",
+        "description": "Test your knowledge of interesting facts about European countries."
+      }
+    },
+    "questions": "The quiz contains 10 questions. Good luck!",
+    "score": "Score",
+    "nextQuestion": "Next Question",
+    "seeResults": "See Results",
+    "quizComplete": "Quiz Complete!",
+    "feedbackExcellent": "Excellent! You are a European geography expert!",
+    "feedbackGreat": "Great job! You know Europe very well!",
+    "feedbackGood": "Good effort! You have a solid understanding of European geography.",
+    "feedbackNeedsWork": "Keep learning! Europe has so many interesting countries to discover.",
+    "takeAnotherQuiz": "Take Another Quiz",
+    "capitalQuestion": "What is the capital of {{country}}?",
+    "flagQuestion": "Which country does this flag {{flag}} belong to?",
+    "elapsedTime": "Total time elapsed",
+    "totalTime": "Total quiz time",
+    "averageTimePerQuestion": "Average time per question",
+    "stopwatchInfo": "Take the quiz at your own pace. A stopwatch will track your total time, and your final results will show how long it took you to complete the quiz."
+  },
+  "regions": {
+    "northernEurope": "Northern Europe",
+    "southernEurope": "Southern Europe",
+    "westernEurope": "Western Europe",
+    "easternEurope": "Eastern Europe",
+    "centralEurope": "Central Europe"
+  },
+  "countryNames": {
+    "albania": "Albania",
+    "andorra": "Andorra",
+    "austria": "Austria",
+    "belarus": "Belarus",
+    "belgium": "Belgium",
+    "bosnia_herzegovina": "Bosnia and Herzegovina",
+    "bulgaria": "Bulgaria",
+    "croatia": "Croatia",
+    "cyprus": "Cyprus",
+    "czech_republic": "Czech Republic",
+    "denmark": "Denmark",
+    "estonia": "Estonia",
+    "finland": "Finland",
+    "france": "France",
+    "germany": "Germany",
+    "greece": "Greece",
+    "hungary": "Hungary",
+    "iceland": "Iceland",
+    "ireland": "Ireland",
+    "italy": "Italy",
+    "kosovo": "Kosovo",
+    "latvia": "Latvia",
+    "liechtenstein": "Liechtenstein",
+    "lithuania": "Lithuania",
+    "luxembourg": "Luxembourg",
+    "malta": "Malta",
+    "moldova": "Moldova",
+    "monaco": "Monaco",
+    "montenegro": "Montenegro",
+    "netherlands": "Netherlands",
+    "north_macedonia": "North Macedonia",
+    "norway": "Norway",
+    "poland": "Poland",
+    "portugal": "Portugal",
+    "romania": "Romania",
+    "russia": "Russia",
+    "san_marino": "San Marino",
+    "serbia": "Serbia",
+    "slovakia": "Slovakia",
+    "slovenia": "Slovenia",
+    "spain": "Spain",
+    "sweden": "Sweden",
+    "switzerland": "Switzerland",
+    "ukraine": "Ukraine",
+    "united_kingdom": "United Kingdom",
+    "vatican_city": "Vatican City"
+  },
+  "capitalNames": {
+    "tirana": "Tirana",
+    "andorra_la_vella": "Andorra la Vella",
+    "vienna": "Vienna",
+    "minsk": "Minsk",
+    "brussels": "Brussels",
+    "sarajevo": "Sarajevo",
+    "sofia": "Sofia",
+    "zagreb": "Zagreb",
+    "nicosia": "Nicosia",
+    "prague": "Prague",
+    "copenhagen": "Copenhagen",
+    "tallinn": "Tallinn",
+    "helsinki": "Helsinki",
+    "paris": "Paris",
+    "berlin": "Berlin",
+    "athens": "Athens",
+    "budapest": "Budapest",
+    "reykjavik": "Reykjavik",
+    "dublin": "Dublin",
+    "rome": "Rome",
+    "pristina": "Pristina",
+    "riga": "Riga",
+    "vaduz": "Vaduz",
+    "vilnius": "Vilnius",
+    "luxembourg_city": "Luxembourg City",
+    "valletta": "Valletta",
+    "chisinau": "Chisinau",
+    "monaco": "Monaco",
+    "podgorica": "Podgorica",
+    "amsterdam": "Amsterdam",
+    "skopje": "Skopje",
+    "oslo": "Oslo",
+    "warsaw": "Warsaw",
+    "lisbon": "Lisbon",
+    "bucharest": "Bucharest",
+    "moscow": "Moscow",
+    "san_marino": "San Marino",
+    "belgrade": "Belgrade",
+    "bratislava": "Bratislava",
+    "ljubljana": "Ljubljana",
+    "madrid": "Madrid",
+    "stockholm": "Stockholm",
+    "bern": "Bern",
+    "kyiv": "Kyiv",
+    "london": "London",
+    "vatican_city": "Vatican City"
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Page Not Found",
+    "message": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+    "returnHome": "Return to Homepage"
+  },
+  "languageSwitcher": {
+    "language": "Language",
+    "en": "English",
+    "pl": "Polski"
+  },
+  "albania_description": "Albania is a country in Southeast Europe on the Adriatic and Ionian Sea. It shares land borders with Montenegro, Kosovo, North Macedonia, and Greece.",
+  "albania_fact1": "Albania has over 750,000 bunkers scattered throughout the country.",
+  "albania_fact2": "The majority of Albanians are Muslim, making it one of the few European countries with a Muslim majority.",
+  "albania_fact3": "The Albanian language, known as Shqip, is one of the oldest in Europe.",
+  "andorra_description": "Andorra is a small, landlocked country located between France and Spain in the Pyrenees mountains.",
+  "andorra_fact1": "Andorra has no airport or train stations, making it accessible only by road.",
+  "andorra_fact2": "It is the only country in the world with Catalan as its official language.",
+  "andorra_fact3": "Andorra has the highest life expectancy in the world at around 83 years.",
+  "austria_description": "Austria is a landlocked country in Central Europe with a high standard of living. It borders Germany, Czech Republic, Slovakia, Hungary, Slovenia, Italy, Switzerland, and Liechtenstein.",
+  "austria_fact1": "Vienna, the capital of Austria, has been ranked as the most liveable city in the world multiple times.",
+  "austria_fact2": "The Austrian flag is one of the oldest national flags in the world.",
+  "austria_fact3": "The famous composer Wolfgang Amadeus Mozart was born in Salzburg, Austria.",
+  "poland_description": "Poland is a country in Central Europe bordered by Germany, Czech Republic, Slovakia, Ukraine, Belarus, Russia, Lithuania, and the Baltic Sea.",
+  "poland_fact1": "Poland is the 9th largest country in Europe.",
+  "poland_fact2": "Marie Curie, the first woman to win a Nobel Prize, was born in Poland.",
+  "poland_fact3": "Poland has 16 UNESCO World Heritage Sites."
+} 

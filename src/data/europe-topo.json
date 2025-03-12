@@ -1,0 +1,334 @@
+{
+  "type": "Topology",
+  "objects": {
+    "europe": {
+      "type": "GeometryCollection",
+      "geometries": [
+        {
+          "type": "Polygon",
+          "properties": { "name": "Albania", "id": "albania" },
+          "id": "albania",
+          "arcs": [[0]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Andorra", "id": "andorra" },
+          "id": "andorra",
+          "arcs": [[1]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Austria", "id": "austria" },
+          "id": "austria",
+          "arcs": [[2]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Belarus", "id": "belarus" },
+          "id": "belarus",
+          "arcs": [[3]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Belgium", "id": "belgium" },
+          "id": "belgium",
+          "arcs": [[4]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Bosnia and Herzegovina", "id": "bosnia_herzegovina" },
+          "id": "bosnia_herzegovina",
+          "arcs": [[5]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Bulgaria", "id": "bulgaria" },
+          "id": "bulgaria",
+          "arcs": [[6]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Croatia", "id": "croatia" },
+          "id": "croatia",
+          "arcs": [[7]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Cyprus", "id": "cyprus" },
+          "id": "cyprus",
+          "arcs": [[8]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Czech Republic", "id": "czech_republic" },
+          "id": "czech_republic",
+          "arcs": [[9]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Denmark", "id": "denmark" },
+          "id": "denmark",
+          "arcs": [[10]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Estonia", "id": "estonia" },
+          "id": "estonia",
+          "arcs": [[11]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Finland", "id": "finland" },
+          "id": "finland",
+          "arcs": [[12]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "France", "id": "france" },
+          "id": "france",
+          "arcs": [[13]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Germany", "id": "germany" },
+          "id": "germany",
+          "arcs": [[14]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Greece", "id": "greece" },
+          "id": "greece",
+          "arcs": [[15]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Hungary", "id": "hungary" },
+          "id": "hungary",
+          "arcs": [[16]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Iceland", "id": "iceland" },
+          "id": "iceland",
+          "arcs": [[17]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Ireland", "id": "ireland" },
+          "id": "ireland",
+          "arcs": [[18]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Italy", "id": "italy" },
+          "id": "italy",
+          "arcs": [[19]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Kosovo", "id": "kosovo" },
+          "id": "kosovo",
+          "arcs": [[20]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Latvia", "id": "latvia" },
+          "id": "latvia",
+          "arcs": [[21]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Liechtenstein", "id": "liechtenstein" },
+          "id": "liechtenstein",
+          "arcs": [[22]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Lithuania", "id": "lithuania" },
+          "id": "lithuania",
+          "arcs": [[23]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Luxembourg", "id": "luxembourg" },
+          "id": "luxembourg",
+          "arcs": [[24]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Malta", "id": "malta" },
+          "id": "malta",
+          "arcs": [[25]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Moldova", "id": "moldova" },
+          "id": "moldova",
+          "arcs": [[26]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Monaco", "id": "monaco" },
+          "id": "monaco",
+          "arcs": [[27]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Montenegro", "id": "montenegro" },
+          "id": "montenegro",
+          "arcs": [[28]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Netherlands", "id": "netherlands" },
+          "id": "netherlands",
+          "arcs": [[29]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "North Macedonia", "id": "north_macedonia" },
+          "id": "north_macedonia",
+          "arcs": [[30]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Norway", "id": "norway" },
+          "id": "norway",
+          "arcs": [[31]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Poland", "id": "poland" },
+          "id": "poland",
+          "arcs": [[32]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Portugal", "id": "portugal" },
+          "id": "portugal",
+          "arcs": [[33]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Romania", "id": "romania" },
+          "id": "romania",
+          "arcs": [[34]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Russia", "id": "russia" },
+          "id": "russia",
+          "arcs": [[35]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "San Marino", "id": "san_marino" },
+          "id": "san_marino",
+          "arcs": [[36]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Serbia", "id": "serbia" },
+          "id": "serbia",
+          "arcs": [[37]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Slovakia", "id": "slovakia" },
+          "id": "slovakia",
+          "arcs": [[38]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Slovenia", "id": "slovenia" },
+          "id": "slovenia",
+          "arcs": [[39]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Spain", "id": "spain" },
+          "id": "spain",
+          "arcs": [[40]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Sweden", "id": "sweden" },
+          "id": "sweden",
+          "arcs": [[41]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Switzerland", "id": "switzerland" },
+          "id": "switzerland",
+          "arcs": [[42]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Ukraine", "id": "ukraine" },
+          "id": "ukraine",
+          "arcs": [[43]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "United Kingdom", "id": "united_kingdom" },
+          "id": "united_kingdom",
+          "arcs": [[44]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Vatican City", "id": "vatican_city" },
+          "id": "vatican_city",
+          "arcs": [[45]]
+        }
+      ]
+    }
+  },
+  "arcs": [
+    [[15, 41], [0.5, 0.3], [0.3, 0.5], [-0.3, 0.5], [-0.5, 0.3], [-0.5, -0.3], [-0.3, -0.5], [0.3, -0.5], [0.5, -0.3]],
+    [[8, 41], [0.2, 0.2], [-0.2, 0.2], [-0.2, -0.2], [0.2, -0.2]],
+    [[13, 36], [1, 0.5], [0.5, 1], [-0.5, 1], [-1, 0.5], [-1, -0.5], [-0.5, -1], [0.5, -1], [1, -0.5]],
+    [[24, 28], [1.5, 1], [1, 1.5], [-1, 1.5], [-1.5, 1], [-1.5, -1], [-1, -1.5], [1, -1.5], [1.5, -1]],
+    [[9, 34], [0.5, 0.3], [0.3, 0.5], [-0.3, 0.5], [-0.5, 0.3], [-0.5, -0.3], [-0.3, -0.5], [0.3, -0.5], [0.5, -0.3]],
+    [[14, 40], [0.5, 0.3], [0.3, 0.5], [-0.3, 0.5], [-0.5, 0.3], [-0.5, -0.3], [-0.3, -0.5], [0.3, -0.5], [0.5, -0.3]],
+    [[20, 41], [1, 0.5], [0.5, 1], [-0.5, 1], [-1, 0.5], [-1, -0.5], [-0.5, -1], [0.5, -1], [1, -0.5]],
+    [[13, 40], [0.7, 0.4], [0.4, 0.7], [-0.4, 0.7], [-0.7, 0.4], [-0.7, -0.4], [-0.4, -0.7], [0.4, -0.7], [0.7, -0.4]],
+    [[33, 45], [0.2, 0.2], [-0.2, 0.2], [-0.2, -0.2], [0.2, -0.2]],
+    [[14, 34], [0.7, 0.4], [0.4, 0.7], [-0.4, 0.7], [-0.7, 0.4], [-0.7, -0.4], [-0.4, -0.7], [0.4, -0.7], [0.7, -0.4]],
+    [[12, 30], [0.7, 0.4], [0.4, 0.7], [-0.4, 0.7], [-0.7, 0.4], [-0.7, -0.4], [-0.4, -0.7], [0.4, -0.7], [0.7, -0.4]],
+    [[19, 28], [0.5, 0.3], [0.3, 0.5], [-0.3, 0.5], [-0.5, 0.3], [-0.5, -0.3], [-0.3, -0.5], [0.3, -0.5], [0.5, -0.3]],
+    [[18, 25], [1.5, 1], [1, 1.5], [-1, 1.5], [-1.5, 1], [-1.5, -1], [-1, -1.5], [1, -1.5], [1.5, -1]],
+    [[10, 37], [2, 1], [1, 2], [-1, 2], [-2, 1], [-2, -1], [-1, -2], [1, -2], [2, -1]],
+    [[13, 32], [1.5, 1], [1, 1.5], [-1, 1.5], [-1.5, 1], [-1.5, -1], [-1, -1.5], [1, -1.5], [1.5, -1]],
+    [[17, 44], [1, 0.5], [0.5, 1], [-0.5, 1], [-1, 0.5], [-1, -0.5], [-0.5, -1], [0.5, -1], [1, -0.5]],
+    [[16, 38], [0.7, 0.4], [0.4, 0.7], [-0.4, 0.7], [-0.7, 0.4], [-0.7, -0.4], [-0.4, -0.7], [0.4, -0.7], [0.7, -0.4]],
+    [[5, 23], [1, 0.5], [0.5, 1], [-0.5, 1], [-1, 0.5], [-1, -0.5], [-0.5, -1], [0.5, -1], [1, -0.5]],
+    [[5, 33], [0.7, 0.4], [0.4, 0.7], [-0.4, 0.7], [-0.7, 0.4], [-0.7, -0.4], [-0.4, -0.7], [0.4, -0.7], [0.7, -0.4]],
+    [[13, 43], [1.5, 1], [1, 1.5], [-1, 1.5], [-1.5, 1], [-1.5, -1], [-1, -1.5], [1, -1.5], [1.5, -1]],
+    [[16, 40.5], [0.2, 0.2], [-0.2, 0.2], [-0.2, -0.2], [0.2, -0.2]],
+    [[18, 30], [0.5, 0.3], [0.3, 0.5], [-0.3, 0.5], [-0.5, 0.3], [-0.5, -0.3], [-0.3, -0.5], [0.3, -0.5], [0.5, -0.3]],
+    [[12, 42], [0.1, 0.1], [-0.1, 0.1], [-0.1, -0.1], [0.1, -0.1]],
+    [[21, 29], [0.5, 0.3], [0.3, 0.5], [-0.3, 0.5], [-0.5, 0.3], [-0.5, -0.3], [-0.3, -0.5], [0.3, -0.5], [0.5, -0.3]],
+    [[10, 35], [0.2, 0.2], [-0.2, 0.2], [-0.2, -0.2], [0.2, -0.2]],
+    [[18, 47], [0.1, 0.1], [-0.1, 0.1], [-0.1, -0.1], [0.1, -0.1]],
+    [[22, 38], [0.5, 0.3], [0.3, 0.5], [-0.3, 0.5], [-0.5, 0.3], [-0.5, -0.3], [-0.3, -0.5], [0.3, -0.5], [0.5, -0.3]],
+    [[9, 37.5], [0.1, 0.1], [-0.1, 0.1], [-0.1, -0.1], [0.1, -0.1]],
+    [[15, 42], [0.5, 0.3], [0.3, 0.5], [-0.3, 0.5], [-0.5, 0.3], [-0.5, -0.3], [-0.3, -0.5], [0.3, -0.5], [0.5, -0.3]],
+    [[10, 33], [0.5, 0.3], [0.3, 0.5], [-0.3, 0.5], [-0.5, 0.3], [-0.5, -0.3], [-0.3, -0.5], [0.3, -0.5], [0.5, -0.3]],
+    [[17, 42], [0.5, 0.3], [0.3, 0.5], [-0.3, 0.5], [-0.5, 0.3], [-0.5, -0.3], [-0.3, -0.5], [0.3, -0.5], [0.5, -0.3]],
+    [[11, 25], [1.5, 1], [1, 1.5], [-1, 1.5], [-1.5, 1], [-1.5, -1], [-1, -1.5], [1, -1.5], [1.5, -1]],
+    [[16, 36], [1, 0.5], [0.5, 1], [-0.5, 1], [-1, 0.5], [-1, -0.5], [-0.5, -1], [0.5, -1], [1, -0.5]],
+    [[5, 41], [1, 0.5], [0.5, 1], [-0.5, 1], [-1, 0.5], [-1, -0.5], [-0.5, -1], [0.5, -1], [1, -0.5]],
+    [[18, 36], [1, 0.5], [0.5, 1], [-0.5, 1], [-1, 0.5], [-1, -0.5], [-0.5, -1], [0.5, -1], [1, -0.5]],
+    [[30, 25], [5, 3], [3, 5], [-3, 5], [-5, 3], [-5, -3], [-3, -5], [3, -5], [5, -3]],
+    [[13, 43.2], [0.05, 0.05], [-0.05, 0.05], [-0.05, -0.05], [0.05, -0.05]],
+    [[17, 40], [0.7, 0.4], [0.4, 0.7], [-0.4, 0.7], [-0.7, 0.4], [-0.7, -0.4], [-0.4, -0.7], [0.4, -0.7], [0.7, -0.4]],
+    [[15, 37], [0.5, 0.3], [0.3, 0.5], [-0.3, 0.5], [-0.5, 0.3], [-0.5, -0.3], [-0.3, -0.5], [0.3, -0.5], [0.5, -0.3]],
+    [[14, 39], [0.5, 0.3], [0.3, 0.5], [-0.3, 0.5], [-0.5, 0.3], [-0.5, -0.3], [-0.3, -0.5], [0.3, -0.5], [0.5, -0.3]],
+    [[6, 40], [1.5, 1], [1, 1.5], [-1, 1.5], [-1.5, 1], [-1.5, -1], [-1, -1.5], [1, -1.5], [1.5, -1]],
+    [[14, 26], [1.5, 1], [1, 1.5], [-1, 1.5], [-1.5, 1], [-1.5, -1], [-1, -1.5], [1, -1.5], [1.5, -1]],
+    [[12, 38], [0.7, 0.4], [0.4, 0.7], [-0.4, 0.7], [-0.7, 0.4], [-0.7, -0.4], [-0.4, -0.7], [0.4, -0.7], [0.7, -0.4]],
+    [[20, 34], [1.5, 1], [1, 1.5], [-1, 1.5], [-1.5, 1], [-1.5, -1], [-1, -1.5], [1, -1.5], [1.5, -1]],
+    [[7, 32], [1, 0.5], [0.5, 1], [-0.5, 1], [-1, 0.5], [-1, -0.5], [-0.5, -1], [0.5, -1], [1, -0.5]],
+    [[13, 43.1], [0.02, 0.02], [-0.02, 0.02], [-0.02, -0.02], [0.02, -0.02]]
+  ]
+} 
