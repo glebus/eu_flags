@@ -11,13 +11,18 @@ import {
   Card, 
   CardContent, 
   Avatar, 
-  styled
+  styled,
+  Alert,
+  Switch,
+  FormControlLabel
 } from '@mui/material';
 import { green, red } from '@mui/material/colors';
+import MapQuizQuestion from './MapQuizQuestion';
+import TestMap from './TestMap';
 
 interface QuizGameProps {
   countries: Country[];
-  questionType: 'capitals' | 'flags';
+  questionType: 'capitals' | 'flags' | 'locations';
 }
 
 interface Question {
@@ -83,6 +88,9 @@ const QuizGame = ({ countries, questionType }: QuizGameProps) => {
   const [quizComplete, setQuizComplete] = useState(false);
   const [totalQuizTime, setTotalQuizTime] = useState(0); // Total time in seconds
   const stopwatchRef = useRef<NodeJS.Timeout | null>(null);
+  const [selectedCountryId, setSelectedCountryId] = useState<string | null>(null);
+  const [debugMode, setDebugMode] = useState(false);
+  const [mapTestMode, setMapTestMode] = useState(false);
   
   // Generate questions on initial load
   useEffect(() => {
@@ -161,6 +169,10 @@ const QuizGame = ({ countries, questionType }: QuizGameProps) => {
           question = t('quiz.flagQuestion', { flag: '' }); // Remove flag from translation
           correctAnswer = t(`countryNames.${country.id}`);
           break;
+        case 'locations':
+          question = t('quiz.locationQuestion', { country: t(`countryNames.${country.id}`) });
+          correctAnswer = t(`countryNames.${country.id}`);
+          break;
       }
       
       // Generate options (1 correct, 3 incorrect)
@@ -177,6 +189,9 @@ const QuizGame = ({ countries, questionType }: QuizGameProps) => {
             option = t(`capitalNames.${getCapitalId(randomCountry.capital)}`);
             break;
           case 'flags':
+            option = t(`countryNames.${randomCountry.id}`);
+            break;
+          case 'locations':
             option = t(`countryNames.${randomCountry.id}`);
             break;
         }
@@ -228,11 +243,26 @@ const QuizGame = ({ countries, questionType }: QuizGameProps) => {
     }
   };
   
+  const handleMapAnswer = (isCorrect: boolean, countryId: string) => {
+    if (showAnswer) return;
+    
+    console.log(`Map answer received: isCorrect=${isCorrect}, countryId=${countryId}, target=${currentCountry?.id}`);
+    
+    setSelectedCountryId(countryId);
+    setShowAnswer(true);
+    
+    // Update score if correct
+    if (isCorrect) {
+      setScore(prev => prev + 1);
+    }
+  };
+  
   const handleNextQuestion = () => {
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(prev => prev + 1);
       setSelectedAnswer(null);
       setShowAnswer(false);
+      setSelectedCountryId(null);
     } else {
       setQuizComplete(true);
     }
@@ -307,6 +337,15 @@ const QuizGame = ({ countries, questionType }: QuizGameProps) => {
   }
   
   const currentQ = questions[currentQuestion];
+  const currentCountry = countries.find(c => c.id === currentQ.countryId);
+  
+  if (!currentCountry) {
+    return (
+      <Paper elevation={3} sx={{ maxWidth: 800, margin: '0 auto', padding: 4 }}>
+        <Typography>{t('common.error')}</Typography>
+      </Paper>
+    );
+  }
   
   return (
     <Paper elevation={3} sx={{ maxWidth: 800, margin: '0 auto', padding: 4 }}>
@@ -315,7 +354,7 @@ const QuizGame = ({ countries, questionType }: QuizGameProps) => {
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
           {questionType === 'flags' && (
             <FlagContainer>
-              {countries.find(c => c.id === currentQ.countryId)?.flag}
+              {currentCountry.flag}
             </FlagContainer>
           )}
           <Typography variant="h5">
@@ -335,22 +374,83 @@ const QuizGame = ({ countries, questionType }: QuizGameProps) => {
         </CardContent>
       </StopwatchCard>
       
-      <Grid container spacing={2} sx={{ marginBottom: 3 }}>
-        {currentQ.options.map((option, index) => (
-          <Grid item xs={12} sm={6} key={index}>
-            <OptionButton
-              variant="outlined"
-              disabled={showAnswer}
-              selected={option === selectedAnswer}
-              correct={showAnswer && option === currentQ.correctAnswer}
-              incorrect={showAnswer && option === selectedAnswer && option !== currentQ.correctAnswer}
-              onClick={() => handleAnswerSelect(option)}
-            >
-              {option}
-            </OptionButton>
-          </Grid>
-        ))}
-      </Grid>
+      {questionType === 'locations' ? (
+        <Box>
+          {/* Debug controls for development */}
+          {import.meta.env.DEV && (
+            <Box sx={{ mb: 2, display: 'flex', justifyContent: 'center', gap: 2 }}>
+              <FormControlLabel
+                control={
+                  <Switch 
+                    checked={debugMode}
+                    onChange={(e) => setDebugMode(e.target.checked)}
+                    size="small"
+                  />
+                }
+                label="Debug Mode"
+              />
+              <FormControlLabel
+                control={
+                  <Switch 
+                    checked={mapTestMode}
+                    onChange={(e) => setMapTestMode(e.target.checked)}
+                    size="small"
+                  />
+                }
+                label="Test Map"
+              />
+            </Box>
+          )}
+
+          {mapTestMode ? (
+            <TestMap />
+          ) : currentCountry ? (
+            <MapQuizQuestion
+              country={currentCountry}
+              onAnswer={(isCorrect, countryId) => handleMapAnswer(isCorrect, countryId)}
+              showAnswer={showAnswer}
+              selectedCountryId={selectedCountryId}
+            />
+          ) : (
+            <Alert severity="error" sx={{ mt: 2 }}>
+              Error: Could not load country data
+            </Alert>
+          )}
+
+          {debugMode && (
+            <Box sx={{ mt: 3, p: 2, border: '1px dashed #ccc' }}>
+              <Typography variant="subtitle2" gutterBottom>Debug Information</Typography>
+              <pre style={{ fontSize: '12px', overflow: 'auto', maxHeight: '200px' }}>
+                {JSON.stringify({
+                  questionType,
+                  currentQuestion,
+                  currentCountryId: currentCountry?.id,
+                  selectedCountryId,
+                  showAnswer,
+                  score
+                }, null, 2)}
+              </pre>
+            </Box>
+          )}
+        </Box>
+      ) : (
+        <Grid container spacing={2} sx={{ marginBottom: 3 }}>
+          {currentQ.options.map((option, index) => (
+            <Grid item xs={12} sm={6} key={index}>
+              <OptionButton
+                variant="outlined"
+                disabled={showAnswer}
+                selected={option === selectedAnswer}
+                correct={showAnswer && option === currentQ.correctAnswer}
+                incorrect={showAnswer && option === selectedAnswer && option !== currentQ.correctAnswer}
+                onClick={() => handleAnswerSelect(option)}
+              >
+                {option}
+              </OptionButton>
+            </Grid>
+          ))}
+        </Grid>
+      )}
       
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <Typography variant="subtitle1" fontWeight={500}>

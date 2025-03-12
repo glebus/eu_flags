@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import QuizGame from '../components/QuizGame';
 import europeanCountries from '../data/europeanCountries';
 
-type QuizType = 'capitals' | 'flags';
+type QuizType = 'capitals' | 'flags' | 'locations';
 
 const PageContainer = styled.div`
   padding: 2rem 0;
@@ -109,6 +109,12 @@ const Quiz = () => {
       name: t('quiz.types.flags.name'),
       icon: '🚩',
       description: t('quiz.types.flags.description')
+    },
+    {
+      id: 'locations',
+      name: t('quiz.types.locations.name'),
+      icon: '🗺️',
+      description: t('quiz.types.locations.description')
     }
   ];
   

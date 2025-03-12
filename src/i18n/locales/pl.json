@@ -90,6 +90,10 @@
       "facts": {
         "name": "Fakty",
         "description": "Sprawdź swoją wiedzę o ciekawych faktach dotyczących krajów europejskich."
+      },
+      "locations": {
+        "name": "Lokalizacje na mapie",
+        "description": "Sprawdź swoją wiedzę o tym, gdzie znajdują się kraje europejskie na mapie."
       }
     },
     "questions": "Quiz zawiera 10 pytań. Powodzenia!",
@@ -104,6 +108,7 @@
     "takeAnotherQuiz": "Rozwiąż kolejny quiz",
     "capitalQuestion": "Jaką stolicę ma {{country}}?",
     "flagQuestion": "Do jakiego kraju należy ta flaga {{flag}}?",
+    "locationQuestion": "Gdzie na mapie znajduje się {{country}}?",
     "elapsedTime": "Całkowity czas",
     "totalTime": "Całkowity czas quizu",
     "averageTimePerQuestion": "Średni czas na pytanie",

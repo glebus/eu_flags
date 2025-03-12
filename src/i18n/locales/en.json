@@ -90,6 +90,10 @@
       "facts": {
         "name": "Facts",
         "description": "Test your knowledge of interesting facts about European countries."
+      },
+      "locations": {
+        "name": "Map Locations",
+        "description": "Test your knowledge of where European countries are located on the map."
       }
     },
     "questions": "The quiz contains 10 questions. Good luck!",
@@ -104,6 +108,7 @@
     "takeAnotherQuiz": "Take Another Quiz",
     "capitalQuestion": "What is the capital of {{country}}?",
     "flagQuestion": "Which country does this flag {{flag}} belong to?",
+    "locationQuestion": "Where is {{country}} located on the map?",
     "elapsedTime": "Total time elapsed",
     "totalTime": "Total quiz time",
     "averageTimePerQuestion": "Average time per question",
