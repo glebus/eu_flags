@@ -76,7 +76,8 @@ const OptionButton = styled(Button, {
 }));
 
 const QuizGame = ({ countries, questionType }: QuizGameProps) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
@@ -87,7 +88,7 @@ const QuizGame = ({ countries, questionType }: QuizGameProps) => {
   const stopwatchRef = useRef<NodeJS.Timeout | null>(null);
   const [selectedCountryId, setSelectedCountryId] = useState<string | null>(null);
   
-  // Generate questions on initial load
+  // Generate questions on initial load and when language changes
   useEffect(() => {
     generateQuestions();
     
@@ -98,7 +99,7 @@ const QuizGame = ({ countries, questionType }: QuizGameProps) => {
         stopwatchRef.current = null;
       }
     };
-  }, [questionType]); // Only regenerate questions when question type changes
+  }, [questionType, i18n.language]); // Regenerate questions when question type or language changes
   
   // Start stopwatch as a separate effect to avoid multiple timers
   useEffect(() => {
@@ -240,8 +241,6 @@ const QuizGame = ({ countries, questionType }: QuizGameProps) => {
   
   const handleMapAnswer = (isCorrect: boolean, countryId: string) => {
     if (showAnswer) return;
-    
-    console.log(`Map answer received: isCorrect=${isCorrect}, countryId=${countryId}, target=${currentCountry?.id}`);
     
     setSelectedCountryId(countryId);
     setShowAnswer(true);

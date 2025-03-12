@@ -73,12 +73,12 @@ const MapQuizQuestion: React.FC<MapQuizQuestionProps> = ({
   useEffect(() => {
     const timer = setTimeout(() => {
       if (mapLoading) {
-        setMapError("Map is taking too long to load. Please try refreshing the page.");
+        setMapError(t('map.loadingError'));
       }
     }, 10000);
     
     return () => clearTimeout(timer);
-  }, [mapLoading]);
+  }, [mapLoading, t]);
 
   const handleZoomIn = () => {
     if (position.zoom >= 8) return;
@@ -135,29 +135,37 @@ const MapQuizQuestion: React.FC<MapQuizQuestionProps> = ({
     }
   };
 
+  // Get translated country name
+  const translatedCountryName = t(`countryNames.${country.id}`);
+
   // Fallback to multiple choice if needed
   if (mapError) {
     return (
       <Box sx={{ mt: 3, position: 'relative' }}>
         <Alert severity="error">
-          {mapError || 'Map failed to render. Please try a different quiz or refresh the page.'}
+          {mapError || t('map.renderError')}
         </Alert>
         
         <Box sx={{ mt: 3 }}>
           <Typography variant="body1" gutterBottom>
-            Please answer the following question: Where is <strong>{country.name}</strong> located in Europe?
+            {t('map.fallbackQuestion', { country: translatedCountryName })}
           </Typography>
           
           <Grid container spacing={2} sx={{ mt: 2 }}>
             {/* Fallback to multiple choice if map doesn't work */}
-            {['France', 'Germany', 'Spain', country.name].sort(() => Math.random() - 0.5).map((option, index) => (
+            {[
+              t('countryNames.france'), 
+              t('countryNames.germany'), 
+              t('countryNames.spain'), 
+              translatedCountryName
+            ].sort(() => Math.random() - 0.5).map((option, index) => (
               <Grid item xs={12} sm={6} key={index}>
                 <Button
                   fullWidth
                   variant="outlined"
                   disabled={showAnswer}
                   onClick={() => {
-                    const isCorrect = option === country.name;
+                    const isCorrect = option === translatedCountryName;
                     onAnswer(isCorrect, isCorrect ? country.id : 'wrong');
                   }}
                   sx={{ 
@@ -179,7 +187,7 @@ const MapQuizQuestion: React.FC<MapQuizQuestionProps> = ({
   return (
     <Box sx={{ mt: 3, position: 'relative' }}>
       <Typography variant="h6" sx={{ mb: 2, textAlign: 'center' }}>
-        Find and click on: <strong>{country.name}</strong>
+        {t('quiz.locationQuestion', { country: translatedCountryName })}
       </Typography>
       
       <MapWrapper>
@@ -198,7 +206,7 @@ const MapQuizQuestion: React.FC<MapQuizQuestionProps> = ({
           }}>
             <CircularProgress />
             <Typography variant="body1" sx={{ ml: 2 }}>
-              Loading map...
+              {t('common.loading')}...
             </Typography>
           </Box>
         )}

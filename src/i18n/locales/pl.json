@@ -70,7 +70,10 @@
     "subtitle": "Odkrywaj kraje Europy na interaktywnej mapie. Kliknij dowolny kraj, aby zobaczyć więcej informacji lub użyj kontrolek powiększania do nawigacji.",
     "legendTitle": "Legenda mapy",
     "capitalCities": "Stolice",
-    "tip": "Możesz powiększać/pomniejszać za pomocą kontrolek lub kółka myszy oraz przesuwać mapę przeciągając ją."
+    "tip": "Możesz powiększać/pomniejszać za pomocą kontrolek lub kółka myszy oraz przesuwać mapę przeciągając ją.",
+    "loadingError": "Ładowanie mapy trwa zbyt długo. Spróbuj odświeżyć stronę.",
+    "renderError": "Nie udało się wyrenderować mapy. Spróbuj innego quizu lub odśwież stronę.",
+    "fallbackQuestion": "Proszę odpowiedzieć na pytanie: Gdzie znajduje się {{country}} w Europie?"
   },
   "quiz": {
     "title": "Quiz o krajach europejskich",

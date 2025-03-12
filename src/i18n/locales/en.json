@@ -70,7 +70,10 @@
     "subtitle": "Explore the countries of Europe on the interactive map. Click on any country to view more information, or use the zoom controls to navigate.",
     "legendTitle": "Map Legend",
     "capitalCities": "Capital cities",
-    "tip": "You can zoom in/out using the controls or your mouse wheel, and pan the map by dragging it."
+    "tip": "You can zoom in/out using the controls or your mouse wheel, and pan the map by dragging it.",
+    "loadingError": "Map is taking too long to load. Please try refreshing the page.",
+    "renderError": "Map failed to render. Please try a different quiz or refresh the page.",
+    "fallbackQuestion": "Please answer the following question: Where is {{country}} located in Europe?"
   },
   "quiz": {
     "title": "European Countries Quiz",
